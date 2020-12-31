@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Year Eve</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <section>
+        <div class="box">
+            <div class="circle">
+                <h3>Happy New Year<br><span>2021</span><br>
+             <small>Ringing in the New year is a cause for celebration.</small></h3>
+             <p>Enjoy the rest of your year folks🤓🤓🤓</p>
+            </div>
+        </div>
+   </section>
+
+
+
+    <script>
+        function bubble() {
+            var count = 200;
+            var section = document.querySelector('section');
+            var i = 0;
+             while(i < count){
+                 var bubble = document.createElement('i');
+                 var x = Math.floor(Math.random() * window. 
+                 innerWidth);
+                 var y = Math.floor(Math.random() * window. 
+                 innerHeight);
+
+                  var size = Math.random() * 10;
+                  bubble.style.left = x+ 'px';
+                  bubble.style.top = y+ 'px';
+                  bubble.style.width = 1+size+ 'px';
+                  bubble.style.height = 1+size+ 'px';
+                 
+
+                 /* bubble.style.animationDuration = 5+size+ '5';
+                  bubble.style.webkitAnimationDelay = */ 
+                  section.appendChild(bubble);
+                  i++
+             }
+        }
+        bubble()
+    </script>
+</body>
+</html>
